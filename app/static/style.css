@@ -1,0 +1,150 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Main container style */
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+/* Content container */
+.content-container {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+/* Header styling */
+header {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Form styling */
+.input-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: left;
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    resize: vertical;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    transition: border-color 0.3s ease-in-out;
+}
+
+textarea:focus {
+    border-color: #ff7e5f; /* Highlighted border color */
+    outline: none;
+}
+
+button {
+    background-color: #ff7e5f;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 60%;
+    max-width: 200px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #feb47b;
+}
+
+/* Result display styles */
+.result {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .input-form {
+        width: 100%;
+    }
+
+    textarea {
+        font-size: 0.9rem;
+    }
+
+    button {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .content-container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px 20px;
+    }
+}
