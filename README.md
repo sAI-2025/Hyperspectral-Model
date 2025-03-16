@@ -125,13 +125,6 @@ For any queries or contributions, feel free to reach out:
 ## **8. Conclusion**
 This project effectively combines **machine learning, deep learning, and model interpretability** to predict vomitoxin_ppb levels from hyperspectral data. The **Autoencoder + 1D CNN hybrid model** outperformed traditional ML models by capturing **spatial dependencies** in hyperspectral bands, while **SHAP analysis** provided critical feature insights. With a **Flask-based web API**, the model is now deployable for real-time inference. Future improvements can include **transformer-based models** for enhanced feature extraction and cloud-based deployment for scalability.
 
-
-Dependencies
-Python 3.8+
-PyTorch
-YOLOv5
-OpenCV
-Streamlit
 ---
 Contributing
 Contributions are welcome! Please create a pull request with suggested improvements.
