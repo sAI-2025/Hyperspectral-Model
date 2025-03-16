@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyperspectral Data Regression Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="main-container">
+        <div class="content-container">
+            <header>
+                <h1>Hyperspectral Data Prediction</h1>
+                <p>Predict regression values from 448 hyperspectral features</p>
+            </header>
+
+            <!-- Form for inputting hyperspectral data -->
+            <form action="/predict" method="POST" class="input-form">
+                <label for="input_features">Enter the 448 features (comma separated):</label>
+                <textarea id="input_features" name="input_features" rows="10" placeholder="Enter 448 features here..."></textarea>
+                <button type="submit" class="btn">Predict</button>
+            </form>
+
+            <!-- Display the prediction result -->
+            {% if prediction_text %}
+                <div class="result">
+                    <h3>{{ prediction_text }}</h3>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>
