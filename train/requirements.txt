@@ -1,0 +1,17 @@
+numpy
+pandas
+tensorflow
+scikit-learn
+pickle5
+matplotlib
+seaborn
+joblib
+os-sys
+torch
+torchvision
+tqdm
+flask
+uvicorn
+flask
+pillow
+requests
